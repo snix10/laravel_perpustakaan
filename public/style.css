@@ -1,0 +1,39 @@
+.cropped-image {
+    width: 150px;
+    /* lebar crop gambar yg diinginkan */
+    height: 200px;
+    /* tinggi crop gambar yg diinginkan */
+    object-fit: cover;
+    object-position: 50% 10%;
+    /* menentukan view crop image yg diinginkan */
+
+}
+
+
+.background-glass {
+    background: rgba(255, 255, 255, 0.33);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.3px);
+    -webkit-backdrop-filter: blur(7.3px);
+    border: 1px solid rgba(255, 255, 255, 0.33);
+}
+
+#header {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    transition: top .3s ease;
+}
+
+#header.show {
+    top: -100px;
+}
+
+@media (min-width: 576px) {
+    .card-group.card-group-scroll {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+}
+
